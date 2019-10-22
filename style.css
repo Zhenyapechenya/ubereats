@@ -1,0 +1,47 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*Шапка страницы*/
+
+/*header {
+    height: 72px;
+}
+*/
+
+.header-content {
+  height: 72px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 575px) {
+  .header-content {
+    width: 308px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .header-content {
+    width: 752px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header-content {
+    width: 956px;
+  }
+}
+
+.header-logo {
+  width: 120px;
+  height: 13px;
+}
