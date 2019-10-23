@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Uber Eats</title>
   </head>
+
   <body>
     <header>
       <div class="header-content">
@@ -37,7 +38,7 @@
     <main class="page-content">
       <section class="search">
         <p class="search-header">Поиск по ресторанам и кухням</p>
-        <hr />
+        <hr class="h-main" />
       </section>
 
       <section class="restaurants">
@@ -45,49 +46,73 @@
 
         <div class="cards">
           <div class="row">
-            <div class="col-xs">
+            <div class="card col-xs-12 col-md-6 col-lg-4">
               <img src="macdonalds.png" alt="Макдоналдс" /><br />
               <h2 class="name-restaurant">Макдоналдс — Газетный</h2>
+              <p class="restaurant-description">₽₽ • Бургеры</p>
+              <p class="delievery-time">25 - 35 мин</p>
             </div>
 
-            <div class="col-xs">
-              <img src="dimsum.png" alt="Макдоналдс" /><br />
+            <div class="card col-12 col-md col-lg-4">
+              <img src="dimsum.png" alt="DimSum & Co" /><br />
               <h2 class="name-restaurant">DimSum & Co — ЦДМ</h2>
+              <p class="restaurant-description">
+                ₽ • Японская • Китайская • Азиатская
+              </p>
+              <p class="delievery-time">40 - 50 мин</p>
             </div>
 
-            <div class="col-xs">
-              <img src="dvizhok.png" alt="Макдоналдс" /><br />
+            <div class="card col-12 col-md-6 col-lg-4">
+              <img src="dvizhok.png" alt="ДвижОк" /><br />
               <h2 class="name-restaurant">ДвижОк — Манежная</h2>
+              <p class="restaurant-description">
+                ₽ • Американская • Европейская
+              </p>
+              <p class="delievery-time">35 - 45 мин</p>
             </div>
 
-            <div class="col-xs">
-              <img src="nha.png" alt="Макдоналдс" /><br />
+            <div class="card col-12 col-md-6 col-lg-4">
+              <img src="nha.png" alt="NHA" /><br />
               <h2 class="name-restaurant">НЯ — NHA</h2>
+              <p class="restaurant-description">₽₽ • Вьетнамская</p>
+              <p class="delievery-time">30 - 40 мин</p>
             </div>
 
-            <div class="col-xs">
-              <img src="dzi.png" alt="Макдоналдс" /><br />
+            <div class="card col-12 col-md-6 col-lg-4">
+              <img src="dzi.png" alt="Точка Дзы" /><br />
               <h2 class="name-restaurant">Точка Дзы — Цветной</h2>
+              <p class="restaurant-description">₽₽ • Вьетнамская</p>
+              <p class="delievery-time">40 - 50 мин</p>
             </div>
 
-            <div class="col-xs">
-              <img src="cinnabon.png" alt="Макдоналдс" /><br />
+            <div class="card col-12 col-md-6 col-lg-4">
+              <img src="cinnabon.png" alt="Cinnabon" /><br />
               <h2 class="name-restaurant">Cinnabon</h2>
+              <p class="restaurant-description">
+                ₽ • Выпечка • Десерты • Кайпкейки
+              </p>
+              <p class="delievery-time">25 - 35 мин</p>
             </div>
 
-            <div class="col-xs">
-              <img src="pizza.png" alt="Макдоналдс" /><br />
+            <div class="card col-12 col-md-6 col-lg-4">
+              <img src="pizza.png" alt="PIZZELOVE" /><br />
               <h2 class="name-restaurant">PIZZELOVE</h2>
+              <p class="restaurant-description">₽₽ • Пицца</p>
+              <p class="delievery-time">15 - 25 мин</p>
             </div>
 
-            <div class="col-xs">
-              <img src="zu.png" alt="Макдоналдс" /><br />
+            <div class="card col-12 col-md-6 col-lg-4">
+              <img src="zu.png" alt="Zю кафе" /><br />
               <h2 class="name-restaurant">Zю кафе — Тверская</h2>
+              <p class="restaurant-description">₽₽ • Японская</p>
+              <p class="delievery-time">25 - 35 мин</p>
             </div>
 
-            <div class="col-xs">
-              <img src="barbq.png" alt="Макдоналдс" /><br />
+            <div class="card col-12 col-md-6 col-lg-4">
+              <img src="barbq.png" alt="Bar BQ" /><br />
               <h2 class="name-restaurant">Bar BQ Cafe — Манежная</h2>
+              <p class="restaurant-description">₽₽₽ • Европейская</p>
+              <p class="delievery-time">30 - 40 мин</p>
             </div>
           </div>
         </div>
@@ -95,7 +120,64 @@
     </main>
 
     <footer>
-      <div class="footer-content"></div>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="white-logo.svg" alt="Uber" />
+        </div>
+        <hr class="h-footer" />
+
+        <div class="footer-nav">
+          <div class="row">
+            <div class="col-xs-12 col-md-4 col-lg-4">
+              <p>Дропдаун для выбора языка</p>
+              <div class="uber-eats">
+                Здесь будут два инлайн-блока-абзаца, чтобы текст был разных цветов
+              </div>
+              <div class="social-logo">
+                Здесь будут логотипы соцсетей
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-md-4 col-lg-4">
+              <p>Об UberEats</p>
+              <p>Станьте партнёром по доставке</p>
+              <p>Станьте партнёром-рестораном</p>
+            </div>
+
+            <div class="col-xs-12 col-md-4 col-lg-4">
+              <p>Все города</p>
+              <p>Цены</p>
+              <p>Помощь</p>
+              <p>FAQs</p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="h-footer" />
+
+        <div class="store-icons">
+          <img src="appstore.png" alt="AppStore" class="store-1" />
+          <img src="googleplay.png" alt="GooglePlay" class="store-2" />
+        </div>
+
+        <hr class="h-footer" />
+
+        <div class="credits">
+          <div class="row">
+            <div class="col-xs-12 col-md-4 col-lg-4">
+              <p>© 2017 Uber Technologies Inc.</p>
+            </div>
+
+            <div class="col-xs-12 col-md-4 col-lg-4">
+              <p>Обработка персональных данных</p>
+            </div>
+
+            <div class="col-xs-12 col-md-4 col-lg-4">
+              <p>Пользовательское соглашение</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

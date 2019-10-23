@@ -23,6 +23,8 @@ header {
   height: 72px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 8px;
+  padding-right: 8px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -75,6 +77,8 @@ header {
 
 .page-content {
   margin: 72px auto;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 @media screen and (max-width: 575px) {
@@ -96,57 +100,226 @@ header {
 }
 
 .search {
-    padding-top: 56px;
-    padding-bottom: 56px;
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 
 .search-header {
   font-size: 16px;
   line-height: 24px;
   color: #626262;
+  margin: 0px 0px 16px;
+}
+
+.h-main {
+  size: 1px;
+  background: #757575;
+  opacity: 0.3;
   margin: 0px;
 }
 
-hr {
-    size: 1px;
-    background: #757575;
-    opacity: 0.3;
-    margin: 0px;
-  }
+h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 34px;
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
 
-  h1 {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 34px;
-    margin-top: 0px;
-    margin-bottom: 16px;
-  }
+/*Карточки ресторанов*/
 
-  /*Карточки ресторанов*/
+/*Модульная сетка*/
+/*.row {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  .row {
-      display: flex;
-  }
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 36px;
+  box-sizing: border-box;
+}
 
-  .name-restaurant {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-  }
+.col-1 {
+  flex-basis: 8.3333%;
+}
 
-  .cards {
-      margin-left: auto;
-      margin-right: auto; /*Спорный блок, проверь марджины нужны ли!!!*/
-  }
+.col-2 {
+  flex-basis: 16.6667%;
+}
+
+.col-3 {
+  flex-basis: 24.9999%;
+}
+
+.col-4 {
+  flex-basis: 33.3333%;
+}
+
+.col-5 {
+  flex-basis: 41.6665%;
+}
+
+.col-6 {
+  flex-basis: 49.9998%;
+}
+
+.col-7 {
+  flex-basis: 58.3331%;
+}
+
+.col-8 {
+  flex-basis: 66.6664%;
+}
+
+.col-9 {
+  flex-basis: 74.9997%;
+}
+
+.col-10 {
+  flex-basis: 83.3333%;
+}
+
+.col-11 {
+  flex-basis: 91.6663%;
+}
+
+.col-12 {
+  flex-basis: 100%;
+}
+*/
+
+.card {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom: 36px;
+  box-sizing: border-box;
+}
+
+.name-restaurant {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0px;
+  padding-top: 16px;
+}
+
+.restaurant-description {
+  font-size: 14px;
+  line-height: 21px;
+  color: #626262;
+  margin: 0px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.delievery-time {
+  font-size: 13px;
+  line-height: 21px;
+  margin: 0px;
+}
 
 /*Подвал страницы, временные меры*/
 
 footer {
-  height: 552px;
   background: #262626;
-  background: bisque;
   /*Не забудь потом отрегулировать высоту футера и отступ контента от низа страницы!!!!!*/
   width: 100%;
+}
+
+.footer-content {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: white;
+  font-size: 13px;
+  line-height: 15px;
+  /*display: flex;
+  align-items: center;
+  justify-content: space-between;*/
+}
+
+@media screen and (max-width: 575px) {
+  .footer-content {
+    max-width: 308px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .footer-content {
+    max-width: 752px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .footer-content {
+    max-width: 956px;
+  }
+}
+
+.footer-logo {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.h-footer {
+  background: #ffffff;
+  opacity: 0.4;
+  size: 1px;
+  margin: 0px;
+}
+
+.store {
+  width: 135px;
+  height: 40px;
+}
+
+@media screen and (max-width: 575px) {
+  .store {
+    width: 124px;
+    height: 36px;
+  }
+}
+
+.store-icons {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.store-1 {
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 575px) {
+  .store-icons {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .store-1 {
+    margin-right: 25px;
+  }
+}
+
+.credits {
+  font-size: 11px;
+  line-height: 13px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
