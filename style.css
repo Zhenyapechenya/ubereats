@@ -76,9 +76,10 @@ header {
 /*Основная часть страницы*/
 
 .page-content {
-  margin: 72px auto;
+  margin: 0px auto;
   padding-left: 8px;
   padding-right: 8px;
+  padding-top: 72px;
 }
 
 @media screen and (max-width: 575px) {
@@ -297,9 +298,9 @@ footer {
 }
 
 .store-icons {
+  text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  text-align: center;
 }
 
 .store-1 {
@@ -307,13 +308,13 @@ footer {
 }
 
 @media screen and (max-width: 575px) {
+  .store-1 {
+    margin-right: 25px;
+  }
+
   .store-icons {
     padding-top: 25px;
     padding-bottom: 25px;
-  }
-
-  .store-1 {
-    margin-right: 25px;
   }
 }
 
@@ -322,4 +323,80 @@ footer {
   line-height: 13px;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.footer-button {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  right: 16px;
+  bottom: 24px;
+  background: #59bd5a;
+  border-radius: 2px;
+  border: none;
+}
+
+@media screen and (max-width: 575px) {
+  .footer-button {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.footer-area {
+  text-align: right;
+}
+
+.footer-menu {
+  margin: 0px 0px 25px;
+}
+
+.social-media {
+  display: flex;
+}
+
+.footer-nav {
+  padding-top: 40px;
+  padding-bottom: 15px;
+}
+
+.twitter {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.uber-eats {
+  display: flex;
+  margin-bottom: 0px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.hash {
+  color: #49a144;
+}
+
+.language-button {
+  width: 200px;
+  height: 40px;
+  background: #3b3b3b;
+  border-radius: 2px;
+  border: none;
+  color: white;
+  text-align: left;
+  padding: 0px;
+}
+
+.world {
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.arrow {
+  float: right;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+  
 }

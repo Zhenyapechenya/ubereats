@@ -18,10 +18,10 @@
   </head>
 
   <body>
-    <header>
+    <header >
       <div class="header-content">
         <div class="header-logo">
-          <img src="headerlogo.svg" alt="Uber" />
+          <a href="#main-page"><img src="headerlogo.svg" alt="Uber" /></a>
         </div>
 
         <div class="header-menu">
@@ -36,8 +36,8 @@
     </header>
 
     <main class="page-content">
-      <section class="search">
-        <p class="search-header">Поиск по ресторанам и кухням</p>
+      <section class="search" id="main-page">
+        <p class="search-header" >Поиск по ресторанам и кухням</p>
         <hr class="h-main" />
       </section>
 
@@ -122,33 +122,54 @@
     <footer>
       <div class="footer-content">
         <div class="footer-logo">
-          <img src="white-logo.svg" alt="Uber" />
+          <a href="#main-page"><img src="white-logo.svg" alt="Uber" /></a>
         </div>
         <hr class="h-footer" />
 
         <div class="footer-nav">
           <div class="row">
+
+
             <div class="col-xs-12 col-md-4 col-lg-4">
-              <p>Дропдаун для выбора языка</p>
-              <div class="uber-eats">
-                Здесь будут два инлайн-блока-абзаца, чтобы текст был разных цветов
+              <div class="footer-menu">
+                
+                  <button class="language-button">
+                    <img src="world.svg" alt="" class="world"/>
+                    Русский
+                    <img src="arrow.svg" alt="" class="arrow"/>
+                  </button>
+               
               </div>
-              <div class="social-logo">
-                Здесь будут логотипы соцсетей
+
+              <div class="uber-eats footer-menu">
+                <div><p class="footer-menu hash">#</p></div>
+                <div><p class="footer-menu">UberEats</p></div>
+              </div>
+
+              <div class="footer-menu social-media">
+                <div>
+                  <img src="facebook.svg" alt="" />
+                </div>
+                <div>
+                  <img src="twitter.svg" alt="" class="twitter" />
+                </div>
+                <div>
+                  <img src="instagram.svg" alt="" />
+                </div>
               </div>
             </div>
 
             <div class="col-xs-12 col-md-4 col-lg-4">
-              <p>Об UberEats</p>
-              <p>Станьте партнёром по доставке</p>
-              <p>Станьте партнёром-рестораном</p>
+              <p class="footer-menu">Об UberEats</p>
+              <p class="footer-menu">Станьте партнёром по доставке</p>
+              <p class="footer-menu">Станьте партнёром-рестораном</p>
             </div>
 
             <div class="col-xs-12 col-md-4 col-lg-4">
-              <p>Все города</p>
-              <p>Цены</p>
-              <p>Помощь</p>
-              <p>FAQs</p>
+              <p class="footer-menu">Все города</p>
+              <p class="footer-menu">Цены</p>
+              <p class="footer-menu">Помощь</p>
+              <p class="footer-menu">FAQs</p>
             </div>
           </div>
         </div>
@@ -177,6 +198,10 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="footer-area">
+        <a href="#main-page"><button class="footer-button"><img src="Shape.png" alt="" /></button></a>
       </div>
     </footer>
   </body>
