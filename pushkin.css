@@ -197,6 +197,75 @@ line-height: 15px;
   margin: 7px 0px;
 }
 
+/*Горизонтальное меню*/
+
+nav {
+  height: 80px;
+  background: white;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+}
+
+ul a {
+  text-decoration: none;
+  color: #626262;
+  font-size: 16px;
+line-height: 19px;
+}
+
+a:active {
+  color: #327430;
+}
+
+.horizontal-menu {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 575px) {
+  nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .horizontal-menu {
+    max-width: 752px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .horizontal-menu {
+    max-width: 956px;
+  }
+}
+
+.points-menu {
+  display: flex;
+  align-items: center;
+
+}
+
+.list-menu {
+  list-style: none;
+padding-left: 0px;
+}
+
+.point {
+  float: left;
+  margin-right: 40px;
+}
+
+.p-check a {
+  color: #327430;
+}
+
+
 /*Подвал страницы*/
 
 footer {
