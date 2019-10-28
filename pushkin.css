@@ -80,7 +80,6 @@ header {
   height: 72px;
 }
 
-
 /*Обложка станицы*/
 
 .face {
@@ -127,10 +126,9 @@ h1 {
   }
 }
 
-
 .face-content {
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
 }
 
 @media screen and (max-width: 575px) {
@@ -159,7 +157,7 @@ h1 {
 
 @media screen and (max-width: 575px) {
   .container {
-  padding-top: 140px;
+    padding-top: 140px;
   }
 }
 
@@ -178,13 +176,13 @@ h1 {
 
 .face-button {
   width: 100px;
-height: 30px;
-background: #262626;
-border-radius: 16px;
-border: none;
-color: white;
-font-size: 13px;
-line-height: 15px;
+  height: 30px;
+  background: #262626;
+  border-radius: 16px;
+  border: none;
+  color: white;
+  font-size: 13px;
+  line-height: 15px;
 }
 
 .face-card {
@@ -209,7 +207,7 @@ ul a {
   text-decoration: none;
   color: #626262;
   font-size: 16px;
-line-height: 19px;
+  line-height: 19px;
 }
 
 a:active {
@@ -248,12 +246,11 @@ a:active {
 .points-menu {
   display: flex;
   align-items: center;
-
 }
 
 .list-menu {
   list-style: none;
-padding-left: 0px;
+  padding-left: 0px;
 }
 
 .point {
@@ -264,6 +261,138 @@ padding-left: 0px;
 .p-check a {
   color: #327430;
 }
+
+/*Меню*/
+
+.menu {
+  margin: 0px auto;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+@media screen and (max-width: 575px) {
+  .menu {
+    max-width: 308px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .menu {
+    max-width: 752px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .menu {
+    max-width: 956px;
+  }
+}
+
+.menu-header {
+  font-size: 22px;
+  line-height: 34px;
+  color: #1d1d1d;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 575px) {
+  .menu-header {
+    margin-top: 140px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+}
+
+.small {
+  width: 50px;
+  size: 1px;
+  background: #757575;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 576px) {
+  .small {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .small {
+    display: none;
+  }
+}
+
+.container-menu {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+}
+
+/*@media screen and (max-width: 575px) {
+  padding-top: 0px;
+}
+*/
+.card {
+  height: 160px;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  border-radius: 2px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px; 
+}
+
+.dish-name {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1d;
+  margin: 0px;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 575px) {
+  font-size: 14px;
+}
+
+.description {
+  font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 21px;
+color: #626262;
+margin: 0px;
+}
+
+.cost {
+  font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 21px;
+color: #1D1D1D;
+margin: 0px;
+
+}
+
+.card-picture {
+  flex: right;
+  width: 170px;
+  height: 160px;
+}
+
+
+
 
 
 /*Подвал страницы*/
