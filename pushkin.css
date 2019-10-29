@@ -336,13 +336,34 @@ a:active {
 }
 */
 .card {
-  height: 160px;
-  border: 1px solid rgba(117, 117, 117, 0.2);
+  height: 161px;
   border-radius: 2px;
   margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
   
+}
+
+
+@media screen and (max-width: 575px) {
+  .card {
+    border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+@media screen and (min-width: 5px) {
+  .card {
+    border: 1px solid rgba(117, 117, 117, 0.2);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card {
+    border: 1px solid rgba(117, 117, 117, 0.2);
+  }
 }
 
 .card-text {
@@ -401,8 +422,7 @@ footer {
   background: #262626;
   /*Не забудь потом отрегулировать высоту футера и отступ контента от низа страницы!!!!!*/
   width: 100%;
-  margin-top: 500px;
-}
+  }
 
 .footer-content {
   margin-left: auto;
